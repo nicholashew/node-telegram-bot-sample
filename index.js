@@ -4,11 +4,11 @@ const fs = require('fs');
 const TelegramBot = require('node-telegram-bot-api');
 const path = require('path');
 
-// replace the value below with the Telegram token you receive from @BotFather
-const token = 'YOUR_TELEGRAM_BOT_TOKEN';
+// config variables
+const config = require('./config/config.json');
 
 // Create a bot that uses 'polling' to fetch new updates
-const bot = new TelegramBot(token, { polling: true });
+const bot = new TelegramBot(config.telegram_bot.token, { polling: true });
 
 const documentDirectoryPath = path.join(__dirname, 'document');
 
