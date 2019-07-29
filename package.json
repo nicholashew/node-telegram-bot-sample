@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "node-telegram-bot-api": "^0.30.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0"
   }
 }
