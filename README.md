@@ -10,11 +10,15 @@ Install dependencies:
 npm install
 ```
 
-Set the telegram bot `token` in the `index.js`.
+Configure the telegram bot `token` in the `./config/config.json`.
 Create a bot and token with [BotFather](https://core.telegram.org/bots#6-botfather) if you don't have one.
 
 ```js
-const token = 'YOUR_TELEGRAM_BOT_TOKEN';
+{
+    "telegram_bot": {
+        "token": "YOUR_TELEGRAM_BOT_TOKEN"
+    }
+}
 ```
 
 Start the Bot app:
