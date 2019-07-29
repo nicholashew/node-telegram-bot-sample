@@ -27,7 +27,7 @@ Start the Bot app:
 node index.js
 ```
 
-To restart your Node.js Apps automatically we can use `nodemon`.
+(Optional) To restart your Node.js Apps automatically we can use `nodemon`.
 
 Installed globally to your system path.
 
@@ -43,11 +43,16 @@ nodemon index.js
 
 ## Bot Command
 
-Once the Bot app is running, you can talk to yor bot with the following commands:
+Once the Bot app is running, by the default the bot is listening to the event `message` for all the message.
 
-- **message** - Bot will reply a message `Received message: {your_message}`
+To inform the Bot to do things, you can talk to the bot with the following commands:
+
 - **/ping** - Bot will reply a message with `pong`
-- **/report {name}** - Bot will reply a greeting message and a `sample.txt` document.
+- **/resource {resource_type}** - Bot will reply a greeting message and document of `audio/image/video/text`. e.g:
+  - `/resource audio`
+  - `/resource image`
+  - `/resource video`
+  - `/resource text`
 
 ## Reference
 
